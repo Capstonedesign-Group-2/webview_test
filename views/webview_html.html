@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="title">This is web title</h1>
+<button type="button" onclick="sendBack()">send message to flutter</button>
+</body>
+<script type="text/javascript">
+    function sendBack() {
+        JavaScriptChannel.postMessage("Hello from JS");
+    }
+</script>
+</html>
